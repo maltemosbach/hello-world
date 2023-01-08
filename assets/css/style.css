@@ -1,0 +1,67 @@
+/* Fromat style of hyperlinks */
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+.link {
+    color:#838891;
+    text-decoration: none;
+}
+.link:hover {
+    text-decoration: underline;
+}
+
+.link_highlight {
+    /* University of Bonn "Uni-Blau" */
+    color: #004e9f;
+    text-decoration: none;
+}
+.link_highlight:hover {
+    text-decoration: underline;
+}
+
+/* Define default attributes for text formatting */
+body{
+    margin:auto;
+    font-family: "Helvetica Neue", "Computer Modern Serif", serif;
+    font-size: 11pt;
+    line-height:150%;
+    margin-left:auto;
+    margin-right:auto;
+    vertical-align:middle;
+    max-width:800px}
+
+div.title{
+    text-align:left;
+    font-size:100%;
+}
+
+div.authors{
+
+}
+
+div.affiliations{
+}
+
+div.title_links{
+}
+
+#default {
+    position: relative;
+    min-height: 100vh;
+  }
+  
+#content {
+padding-bottom: 3rem;    /* Footer height */
+}
+
+#footer {
+position: absolute;
+bottom: 0;
+width: 100%;
+height: 3rem;            /* Footer height */
+}
