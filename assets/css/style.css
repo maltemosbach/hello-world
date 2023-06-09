@@ -27,7 +27,7 @@ a:hover {
 /* Define default attributes for text formatting */
 body{
     margin:auto;
-    font-family: "Helvetica Neue", "Computer Modern Serif", serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 11pt;
     line-height:150%;
     margin-left:auto;
