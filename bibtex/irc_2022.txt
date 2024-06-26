@@ -1,0 +1,8 @@
+@inproceedings{mosbach2022efficient,
+  title={Efficient representations of object geometry for reinforcement learning of interactive grasping policies},
+  author={Mosbach, Malte and Behnke, Sven},
+  booktitle={2022 Sixth IEEE International Conference on Robotic Computing (IRC)},
+  pages={156--163},
+  year={2022},
+  organization={IEEE}
+}

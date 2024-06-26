@@ -1,0 +1,8 @@
+@inproceedings{scheiderer2020transfer,
+  title={Transfer of Hierarchical Reinforcement Learning Structures for Robotic Manipulation Tasks},
+  author={Scheiderer, Christian and Mosbach, Malte and Posada-Moreno, Andr{\'e}s Felipe and Meisen, Tobias},
+  booktitle={2020 International Conference on Computational Science and Computational Intelligence (CSCI)},
+  pages={504--509},
+  year={2020},
+  organization={IEEE}
+}
