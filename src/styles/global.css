@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #FAFAFA; /* Light-gray background */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter', sans-serif;
+    font-weight: normal !important; /* Make headings not bold */
+}
+
+/*a {*/
+/*    color: inherit !important; !* Inherit color from parent *!*/
+/*}*/
+
+.section {
+    padding: 2rem 0;
+}
+
+.profile-section {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.profile-section > div {
+    margin-right: 2rem;
+}
+
+.profile-section > div:last-child {
+    margin-right: 0;
+}
+
+.divider {
+    border-bottom: 1px solid #eaeaea;
+    margin: 2rem 0;
+}
+
+.btn-primary {
+    background-color: #000;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.publication-entry {
+    display: flex;
+    background: white;
+    overflow: hidden;
+    margin-bottom: 2rem;
+    height: 180px; /* Fixed height for publication entry box */
+}
+
+.publication-video {
+    position: relative;
+    height: 100%;
+}
+
+.publication-video a {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.publication-video video {
+    width: 240px;
+    height: 180px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.publication-details {
+    flex: 1;
+    padding-top: 0.75rem;
+    padding-left: 2rem;
+    padding-right: 1rem;
+    display: flex;
+    flex-direction: column;
+    /*justify-content: flex-center;*/
+}
+
+.publication-details h3, .publication-details p {
+    color: #000 !important; /* Black text */
+}
+
+.publication-details .author {
+    margin-bottom: 0.5rem;
+}
+
+.publication-details .actions {
+    margin-top: auto; /* Push buttons to the bottom */
+    display: flex;
+    gap: 0.5rem;
+}
