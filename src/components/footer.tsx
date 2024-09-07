@@ -5,7 +5,7 @@ import { AiFillGithub, AiOutlineGoogle, AiFillLinkedin } from 'react-icons/ai';
 const Footer: React.FC = () => {
     return (
         <footer className="p-4">
-            <div className="container mx-auto max-w-5xl flex justify-between items-center text-normal text-base">
+            <div className="container mx-auto max-w-4xl flex justify-between items-center text-normal text-base">
                 <div className="flex space-x-8">
                     {/* <a href="https://www.uni-bonn.de/en/imprint" className="text-gray-800 hover:text-blue-600">Imprint</a>
                     <a href="https://www.uni-bonn.de/en/data-protection-policy" className="text-gray-800 hover:text-blue-600">Data Protection Policy</a> */}

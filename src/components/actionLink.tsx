@@ -13,7 +13,7 @@ const ActionLink: React.FC<LinkProps> = ({ children, url, button = false }) => {
             {children}
         </a>
     ) : (
-        <a href={url} target={!url.startsWith("#") ? "_blank" : "_self"} className="inline-flex items-center text-gray-800 hover:text-blue-600 text-base mr-6">
+        <a href={url} target={!url.startsWith("#") ? "_blank" : "_self"} className="inline-flex items-center text-blue-600 hover:text-blue-800 text-base mr-6">
             {children} <IoIosArrowForward className="ml-1" />
         </a>
     );
