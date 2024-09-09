@@ -13,6 +13,7 @@ import Publication from "../components/publication";
 import ActionLink from "../components/actionLink";
 import Profile from "../components/profile";
 import Footer from "../components/footer";
+import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
 
 
 import Carousel from "react-multi-carousel";
@@ -91,7 +92,7 @@ const Article: React.FC = ({children}) => {
     return (
         <div
             className="mx-auto w-full max-w-4xl flex-none 
-            content-start overflow-hidden">
+            content-start overflow-visible">
             {children}
         </div>
     )
@@ -104,7 +105,7 @@ const carouselResponsive = {
     desktop: {
         breakpoint: {max: 3000, min: 1024},
         items: 4,
-        partialVisibilityGutter: 40 // Allow partial view of the next item
+        // partialVisibilityGutter: 40 // Allow partial view of the next item
     },
     tablet: {
         breakpoint: {max: 1024, min: 464},
@@ -121,7 +122,7 @@ const CarouselItem: React.FC = ({children, video}) => {
     return (
         <div>
             <video autoPlay muted playsInline loop alt={video}
-                   className="carousel-video px-0 rounded-xl">
+                   className="carousel-video px-1.5 rounded-xl">
                 <source src={video} type="video/mp4"/>
             </video>
             {/*<p className="text-center">{children}</p>*/}
@@ -199,7 +200,7 @@ const IndexPage: React.FC<PageProps> = () => {
                         novel categories of objects.
                     </Abstract>
 
-                    <div className="pt-12 pl-0 pr-0">
+                    <div className="pt-12 pl-0 pr-0 overflow-visible">
 
                     <div className="flex justify-left text-3xl">
                     <h3>Learning Promptable Manipulation Policies</h3>
@@ -215,18 +216,23 @@ const IndexPage: React.FC<PageProps> = () => {
                     </video>
 
 
-                    
-                    <div className="flex justify-center mt-24 text-3xl">
-                    <h3>Real-world Rollouts</h3>
+                    <div className="container mx-auto max-w-6xl flex justify-between items-center">
+                    <div className="flex justify-left text-3xl mt-12">
+                    <h3>Rollouts</h3>
                     </div>
-                    <div className="flex justify-center mt-4 text-base ">
-                        <center>We distill real-world deployable policies that are promptable via language or points by using SAM-2 as their interface. We distill real-world deployable policies that are promptable via language or points by using SAM-2 as their interface.</center>
+                    <nav className="space-x-0">
+                    <a href="" className="inline-flex items-center text-blue-600 hover:text-blue-800 text-3xl mr-6">
+            <IoIosArrowBack className="ml-1" /></a>
+                <a href="" className="inline-flex items-center text-blue-600 hover:text-blue-800 text-3xl mr-6">
+                <IoIosArrowForward className="ml-1" /></a>
+                    </nav>
+
                     </div>
                     
-                    <div className="max-w-10xl space-x-4 p-4 py-0 md:py-0 px-0 md:px-0 overflow-hidden">
-                        <div className="relative pb-0 mb-0">
-                            <Carousel responsive={carouselResponsive} infinite={false} showDots={true}
-                                      renderDotsOutside={true} swipeable={true}
+                    <div className="w-screen space-x-4 p-0 py-6 overflow-visible">
+                        <div className="relative">
+                            <Carousel responsive={carouselResponsive} infinite={false} showDots={false}
+                                      renderDotsOutside={false} swipeable={true}
                                       draggable={true}
                                       beforeChange={(previousSlide, {currentSlide, onMove}) => {
                                           // play all carousel-video, as the browser doesn't like autoplaying them all
